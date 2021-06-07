@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,13 +37,164 @@
                 </nav>
             </div>
         </div>
-        <div class="right_aside flex">
+        <div class="right_aside flex"> 
             <div class="main">
-                <div>1</div>
-                <div>2</div>
+                <header class="main_header flex">
+                    <div class="logo"><a href="index.html">Shikra.</a></div>
+                    <div class="search flex_end ">
+                        <form action="/action_page.php" class="form_search flex_end ">
+                           
+                            <button class="btn_search">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8723 14.8116C17.1996 13.2436 18 11.2153 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C11.2153 18 13.2436 17.1996 14.8116 15.8723L17.4697 18.5303C17.7626 18.8232 18.2374 18.8232 18.5303 18.5303C18.8232 18.2374 18.8232 17.7626 18.5303 17.4697L15.8723 14.8116ZM16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <input type="text" placeholder="Search.." name="search" class="search_input">
+                            
+                          </form> 
+                    </div>
+                    <div class="header_filter flex_center"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="26" cy="26" r="26" fill="#F86549"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.325 32.75H18C17.5858 32.75 17.25 32.4142 17.25 32C17.25 31.5858 17.5858 31.25 18 31.25H20.325C20.6725 29.5383 22.1858 28.25 24 28.25C25.8142 28.25 27.3275 29.5383 27.675 31.25H34C34.4142 31.25 34.75 31.5858 34.75 32C34.75 32.4142 34.4142 32.75 34 32.75H27.675C27.3275 34.4617 25.8142 35.75 24 35.75C22.1858 35.75 20.6725 34.4617 20.325 32.75ZM21.75 32C21.75 30.7574 22.7574 29.75 24 29.75C25.2426 29.75 26.25 30.7574 26.25 32C26.25 33.2426 25.2426 34.25 24 34.25C22.7574 34.25 21.75 33.2426 21.75 32Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.325 22.75H18C17.5858 22.75 17.25 22.4142 17.25 22C17.25 21.5858 17.5858 21.25 18 21.25H24.325C24.6725 19.5383 26.1858 18.25 28 18.25C29.8142 18.25 31.3275 19.5383 31.675 21.25H34C34.4142 21.25 34.75 21.5858 34.75 22C34.75 22.4142 34.4142 22.75 34 22.75H31.675C31.3275 24.4617 29.8142 25.75 28 25.75C26.1858 25.75 24.6725 24.4617 24.325 22.75ZM25.75 22C25.75 20.7574 26.7574 19.75 28 19.75C29.2426 19.75 30.25 20.7574 30.25 22C30.25 23.2426 29.2426 24.25 28 24.25C26.7574 24.25 25.75 23.2426 25.75 22Z" fill="white"/>
+                        </svg>
+                        </div> 
+                </header>
+              
+                <section class="slider">
+                       <div class="filter_slider flex between">
+                           <div>                               
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.5C14.6944 18.5 18.5 14.6944 18.5 10C18.5 5.30558 14.6944 1.5 10 1.5C5.30558 1.5 1.5 5.30558 1.5 10C1.5 14.6944 5.30558 18.5 10 18.5ZM20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z" fill="#3E3C50"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9368 7.06319L8.87789 8.58528C8.74268 8.63599 8.63599 8.74267 8.58528 8.87789L7.06319 12.9368L11.1221 11.4147C11.2573 11.364 11.364 11.2573 11.4147 11.1221L12.9368 7.06319ZM13.4401 5.27246L8.3512 7.18079C7.81036 7.38361 7.38361 7.81035 7.18079 8.3512L5.27246 13.4401C4.97101 14.244 5.75603 15.029 6.55992 14.7275L11.6488 12.8192C12.1896 12.6164 12.6164 12.1896 12.8192 11.6488L14.7275 6.55992C15.029 5.75603 14.244 4.97101 13.4401 5.27246Z" fill="#3E3C50"/>
+                                </svg>
+                                <span class="explore_p">Explore</span>
+                            </div>
+                            <div class="icon_slider">
+                                <svg width="8" height="24" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.78033 15.0303C8.07322 14.7374 8.07322 14.2626 7.78033 13.9697L1.98744 8.17678C1.88981 8.07915 1.88981 7.92085 1.98744 7.82322L7.78033 2.03033C8.07322 1.73744 8.07322 1.26256 7.78033 0.96967C7.48744 0.676777 7.01256 0.676777 6.71967 0.96967L0.926777 6.76256C0.243359 7.44598 0.243361 8.55402 0.926778 9.23744L6.71967 15.0303C7.01256 15.3232 7.48744 15.3232 7.78033 15.0303Z" fill="black"/>
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.21967 19.0303C7.92678 18.7374 7.92678 18.2626 8.21967 17.9697L14.0126 12.1768C14.1102 12.0791 14.1102 11.9209 14.0126 11.8232L8.21967 6.03033C7.92678 5.73744 7.92678 5.26256 8.21967 4.96967C8.51256 4.67678 8.98744 4.67678 9.28033 4.96967L15.0732 10.7626C15.7566 11.446 15.7566 12.554 15.0732 13.2374L9.28033 19.0303C8.98744 19.3232 8.51256 19.3232 8.21967 19.0303Z" fill="black"/>
+                                </svg>                                
+                                   
+                            </div>
+                       </div>
+                       <div class="slider_box flex">
+                           <div class="slider_icon"><img src="./image/cardrow.png" alt="" class="slider_img"></div>
+                           <div class="card_name">
+                               <p>lala</p>
+                               <p>laslls</p>
+                               <p>lsdls</p>
+
+                           </div>
+                           <div class="card_box flex wrap">
+                               <div class="card">
+                                   <img src="./image/photo/slide1.jpg" alt="slider1">
+                                   <h2 class="card_title">Phi Phi Islands</h2>
+                                   <div class="flex between">
+                                    <div class="flex"><svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.16216 0.0996094C3.2515 0.0996094 0.891846 2.51611 0.891846 5.4978C0.891846 7.90771 4.33639 12.3013 5.65611 13.8959C5.71801 13.9718 5.79541 14.0328 5.88285 14.0747C5.97029 14.1166 6.06564 14.1383 6.16216 14.1383C6.25869 14.1383 6.35403 14.1166 6.44147 14.0747C6.52891 14.0328 6.60631 13.9718 6.66821 13.8959C7.98793 12.3013 11.4325 7.90844 11.4325 5.4978C11.4325 2.51611 9.07283 0.0996094 6.16216 0.0996094ZM6.16216 7.11879C5.21573 7.11879 4.44917 6.33278 4.44917 5.36399C4.44917 4.39447 5.21645 3.6092 6.16216 3.6092C7.10788 3.6092 7.87516 4.39447 7.87516 5.36399C7.87516 6.33278 7.10788 7.11879 6.16216 7.11879Z" fill="#FF6647"/>
+                                        </svg>
+                                    <p>Thailand</p> 
+                                    </div>
+                                    <span class="card_price">$1,480</span>                                      
+                                   </div>
+                                   <div class="card_img_icon">
+                                    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                        <ellipse cx="25.2184" cy="20" rx="17.9191" ry="17.8793" fill="#FF6647"/>
+                                        <path d="M25.2184 38.931C35.6935 38.931 44.1892 30.4575 44.1892 20C44.1892 9.54248 35.6935 1.06897 25.2184 1.06897C14.7433 1.06897 6.24759 9.54248 6.24759 20C6.24759 30.4575 14.7433 38.931 25.2184 38.931Z" stroke="white" stroke-width="2.10345"/>
+                                        </g>
+                                        <path d="M29.2452 12.6436H21.307C20.5342 12.6436 19.902 13.3454 19.902 14.203V27.8087C19.902 28.1791 20.0952 28.5299 20.3937 28.6859C20.7099 28.8418 21.0611 28.8028 21.3245 28.5689L21.3421 28.5494L25.2761 24.8654L29.2101 28.5494L29.2276 28.5689C29.3857 28.7054 29.5789 28.7833 29.7721 28.7833C29.895 28.7833 30.0355 28.7443 30.1584 28.6664C30.457 28.5104 30.6502 28.1596 30.6502 27.7892V14.203C30.6502 13.3454 30.0179 12.6436 29.2452 12.6436Z" fill="white"/>
+                                        <defs>
+                                        <filter id="filter0_d" x="0.989026" y="0.0172501" width="48.4589" height="48.3793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                        <feOffset dy="4.2069"/>
+                                        <feGaussianBlur stdDeviation="2.10345"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.4 0 0 0 0 0.278431 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>                                        
+                                   </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/photo/slider2.jpg" alt="slider1">
+                                    <h2 class="card_title">Phi Phi Islands</h2>
+                                    <div class="flex between">
+                                     <div class="flex"><svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M6.16216 0.0996094C3.2515 0.0996094 0.891846 2.51611 0.891846 5.4978C0.891846 7.90771 4.33639 12.3013 5.65611 13.8959C5.71801 13.9718 5.79541 14.0328 5.88285 14.0747C5.97029 14.1166 6.06564 14.1383 6.16216 14.1383C6.25869 14.1383 6.35403 14.1166 6.44147 14.0747C6.52891 14.0328 6.60631 13.9718 6.66821 13.8959C7.98793 12.3013 11.4325 7.90844 11.4325 5.4978C11.4325 2.51611 9.07283 0.0996094 6.16216 0.0996094ZM6.16216 7.11879C5.21573 7.11879 4.44917 6.33278 4.44917 5.36399C4.44917 4.39447 5.21645 3.6092 6.16216 3.6092C7.10788 3.6092 7.87516 4.39447 7.87516 5.36399C7.87516 6.33278 7.10788 7.11879 6.16216 7.11879Z" fill="#FF6647"/>
+                                         </svg>
+                                     <p>Thailand</p> 
+                                     </div>
+                                     <span class="card_price">$1,480</span>                                      
+                                    </div>
+                                    <div class="card_img_icon">
+                                        <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d)">
+                                            <ellipse cx="25.2184" cy="20" rx="17.9191" ry="17.8793" fill="#FF6647"/>
+                                            <path d="M25.2184 38.931C35.6935 38.931 44.1892 30.4575 44.1892 20C44.1892 9.54248 35.6935 1.06897 25.2184 1.06897C14.7433 1.06897 6.24759 9.54248 6.24759 20C6.24759 30.4575 14.7433 38.931 25.2184 38.931Z" stroke="white" stroke-width="2.10345"/>
+                                            </g>
+                                            <path d="M29.2452 12.6436H21.307C20.5342 12.6436 19.902 13.3454 19.902 14.203V27.8087C19.902 28.1791 20.0952 28.5299 20.3937 28.6859C20.7099 28.8418 21.0611 28.8028 21.3245 28.5689L21.3421 28.5494L25.2761 24.8654L29.2101 28.5494L29.2276 28.5689C29.3857 28.7054 29.5789 28.7833 29.7721 28.7833C29.895 28.7833 30.0355 28.7443 30.1584 28.6664C30.457 28.5104 30.6502 28.1596 30.6502 27.7892V14.203C30.6502 13.3454 30.0179 12.6436 29.2452 12.6436Z" fill="white"/>
+                                            <defs>
+                                            <filter id="filter0_d" x="0.989026" y="0.0172501" width="48.4589" height="48.3793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                            <feOffset dy="4.2069"/>
+                                            <feGaussianBlur stdDeviation="2.10345"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.4 0 0 0 0 0.278431 0 0 0 0.25 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                            </filter>
+                                            </defs>
+                                            </svg>                                        
+                                       </div>
+                                 </div>
+                                 <div class="card">
+                                    <img src="./image/photo/slider3.jpg" alt="slider1">
+                                    <h2 class="card_title">Phi Phi Islands</h2>
+                                    <div class="flex between">
+                                     <div class="flex"><svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M6.16216 0.0996094C3.2515 0.0996094 0.891846 2.51611 0.891846 5.4978C0.891846 7.90771 4.33639 12.3013 5.65611 13.8959C5.71801 13.9718 5.79541 14.0328 5.88285 14.0747C5.97029 14.1166 6.06564 14.1383 6.16216 14.1383C6.25869 14.1383 6.35403 14.1166 6.44147 14.0747C6.52891 14.0328 6.60631 13.9718 6.66821 13.8959C7.98793 12.3013 11.4325 7.90844 11.4325 5.4978C11.4325 2.51611 9.07283 0.0996094 6.16216 0.0996094ZM6.16216 7.11879C5.21573 7.11879 4.44917 6.33278 4.44917 5.36399C4.44917 4.39447 5.21645 3.6092 6.16216 3.6092C7.10788 3.6092 7.87516 4.39447 7.87516 5.36399C7.87516 6.33278 7.10788 7.11879 6.16216 7.11879Z" fill="#FF6647"/>
+                                         </svg>
+                                     <p>Thailand</p> 
+                                     </div>
+                                     <span class="card_price">$1,480</span>                                      
+                                    </div>
+                                    <div class="card_img_icon">
+                                        <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d)">
+                                            <ellipse cx="25.2184" cy="20" rx="17.9191" ry="17.8793" fill="#FF6647"/>
+                                            <path d="M25.2184 38.931C35.6935 38.931 44.1892 30.4575 44.1892 20C44.1892 9.54248 35.6935 1.06897 25.2184 1.06897C14.7433 1.06897 6.24759 9.54248 6.24759 20C6.24759 30.4575 14.7433 38.931 25.2184 38.931Z" stroke="white" stroke-width="2.10345"/>
+                                            </g>
+                                            <path d="M29.2452 12.6436H21.307C20.5342 12.6436 19.902 13.3454 19.902 14.203V27.8087C19.902 28.1791 20.0952 28.5299 20.3937 28.6859C20.7099 28.8418 21.0611 28.8028 21.3245 28.5689L21.3421 28.5494L25.2761 24.8654L29.2101 28.5494L29.2276 28.5689C29.3857 28.7054 29.5789 28.7833 29.7721 28.7833C29.895 28.7833 30.0355 28.7443 30.1584 28.6664C30.457 28.5104 30.6502 28.1596 30.6502 27.7892V14.203C30.6502 13.3454 30.0179 12.6436 29.2452 12.6436Z" fill="white"/>
+                                            <defs>
+                                            <filter id="filter0_d" x="0.989026" y="0.0172501" width="48.4589" height="48.3793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                            <feOffset dy="4.2069"/>
+                                            <feGaussianBlur stdDeviation="2.10345"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.4 0 0 0 0 0.278431 0 0 0 0.25 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                            </filter>
+                                            </defs>
+                                            </svg>                                        
+                                       </div>
+                                 </div>
+                           </div>
+                       </div>
+                </section>
+                
             </div>
-            <div class="info_travel">2</div>
+              <!-- start info travel -->
+            <div class="info_travel">2222222222222</div>
+            <!-- end info trevel -->
         </div>
+        <!-- end right side -->
 
 
 
