@@ -268,12 +268,12 @@ align-items: center;
     position: relative;
   
 }
-.card_name p{
--moz-transform: scale(-1, 1);
--webkit-transform: scale(-1, 1);
--o-transform: scale(-1, 1);
--ms-transform: scale(-1, 1);
-transform: scale(-1, 1);}
+.card_name p {
+    transform: rotate(270deg);
+    margin:60px 0;
+
+}
+
 .card p{
     font-family: Gilroy-Regular;
 font-size: 14px;
