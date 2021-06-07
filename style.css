@@ -52,10 +52,11 @@ a{	text-decoration: none;
     background-color: red;
     margin: 0 auto;
 }
+    
 
-.left_aside{
+.left_aside {
     background-color: aqua;
-    width:9%; ;
+    width:9%; 
 }
 .right_aside{
     background-color: blueviolet;
@@ -80,13 +81,8 @@ a{	text-decoration: none;
  flex-direction: column;
  justify-content: center;
  background-color: #F6F7FB;
- /* Rectangle 2 */
-
-
-
-/* Rectangle 2 */
-
-
+ 
+box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.4);
 
 
 
@@ -127,6 +123,17 @@ list-style: none;
    
     
 }
+.active .a_css {
+    color:#1C295D;
+    /* cursor: pointer; */
+}
+
+.left_bar_link a:active{
+    color: green;
+}
+.left_bar_link a:hover{
+    color: red;
+}
 .left_bar_link{
     margin-top: 30px;
 }
@@ -137,6 +144,7 @@ list-style: none;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 .nav_ul{
     padding-top:56px; ;
@@ -145,5 +153,8 @@ list-style: none;
 .left_bar_link p{
     margin-top:12px;
 }
+
+/* main css */
+/* header */
 
 
