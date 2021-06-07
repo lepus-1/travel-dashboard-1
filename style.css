@@ -1,0 +1,149 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+a{	text-decoration: none;
+	}
+
+.container {
+    width: 1440px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.left_aside{
+    background-color: aqua;
+    width:9%; ;
+}
+.right_aside{
+    background-color: blueviolet;
+    width:91%;
+}
+.flex{
+    display: flex;
+    }
+.main{
+    width: 69%;
+    background-color: crimson;
+}
+.info_travel{
+    width:31%;
+    background-color: darkblue;
+}
+
+
+/* left bar */
+.left_bar {
+
+ flex-direction: column;
+ justify-content: center;
+ background-color: #F6F7FB;
+ /* Rectangle 2 */
+
+
+
+/* Rectangle 2 */
+
+
+
+
+
+}
+
+.left_bar_header{
+    height: 113px;
+    background-color:#393D46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left_bar_link{
+list-style: none;
+}
+.left_bar_nav{
+    text-align: center;
+}
+
+.img_bar{
+    /* width:50px;
+    height: 50px; */
+    max-width:100%;
+    height: auto; 
+}
+
+.left_bar_link a {
+ 
+    font-family: Google Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #7987A5;
+   
+    
+}
+.left_bar_link{
+    margin-top: 30px;
+}
+
+
+.logout_link{
+    height:200px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.nav_ul{
+    padding-top:56px; ;
+}
+
+.left_bar_link p{
+    margin-top:12px;
+}
+
+
